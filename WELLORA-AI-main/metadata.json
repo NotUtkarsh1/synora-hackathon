@@ -1,0 +1,6 @@
+{
+  "name": "Holistic Health & Wellness Agent",
+  "description": "WELLORA AI - Your intelligent companion for everyday wellness, featuring real-time physiological telemetry, AI health guidance, meal vision scanner, and nutrition tracking.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

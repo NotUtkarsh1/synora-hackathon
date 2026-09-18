@@ -1,0 +1,115 @@
+@import "tailwindcss";
+
+@theme {
+  --color-sage: #7B9177;
+  --color-sage-canvas: #62775E;
+  --color-sage-dark: #536750;
+  --color-sage-deep: #445641;
+  --color-sage-light: #9BB097;
+  --color-sage-muted: #82977E;
+  --color-sage-subtle: #61755D;
+  
+  --color-olive: #5F745B;
+  --color-olive-dark: #536750;
+  --color-olive-deep: #445641;
+  --color-olive-canvas: #62775E;
+  --color-olive-light: #88A084;
+  --color-olive-subtle: #61755D;
+  
+  --color-beige-cream: #F5F0E6;
+  --color-beige-light: #EAE3D3;
+  --color-beige-card: #FAF7F0;
+  --color-cream-soft: #FFFDF7;
+  --color-wellness-dark: #222B1E;
+  --color-wellness-muted: #61705D;
+  --color-wellness-border: #DDD4C1;
+  --color-wellness-border-dark: #6C8168;
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-display: 'Outfit', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-sage-dark);
+  color: var(--color-wellness-dark);
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+@keyframes heartbeat {
+  0% { transform: scale(1); }
+  14% { transform: scale(1.18); }
+  28% { transform: scale(1); }
+  42% { transform: scale(1.12); }
+  70% { transform: scale(1); }
+  100% { transform: scale(1); }
+}
+
+.animate-heartbeat {
+  animation: heartbeat 0.85s ease-in-out infinite;
+  transform-origin: center;
+}
+
+@keyframes floatSlow1 {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(25px, -35px) scale(1.06);
+  }
+}
+
+@keyframes floatSlow2 {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(-30px, 20px) scale(0.95);
+  }
+}
+
+@keyframes floatSlow3 {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(18px, 28px) scale(1.04);
+  }
+}
+
+.animate-float-slow-1 {
+  animation: floatSlow1 22s ease-in-out infinite;
+}
+
+.animate-float-slow-2 {
+  animation: floatSlow2 28s ease-in-out infinite;
+}
+
+.animate-float-slow-3 {
+  animation: floatSlow3 25s ease-in-out infinite;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-1 {
+  animation: fadeIn 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-fade-in-2 {
+  animation: fadeIn 1.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-fade-in-3 {
+  animation: fadeIn 1.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
